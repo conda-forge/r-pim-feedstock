@@ -1,6 +1,5 @@
 {% set version = '2.0.2' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-pim
@@ -13,8 +12,7 @@ source:
   sha256: 1195dbdbd67348dfef4b6fc34fcec643da685ebe58d34bbe049ab121aca9944f
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
